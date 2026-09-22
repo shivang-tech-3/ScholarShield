@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ShieldCheck, GraduationCap, Search, CheckCircle2, UserCheck, LayoutDashboard } from 'lucide-react';
+import { ShieldCheck, GraduationCap, Search, CheckCircle2, Lock, Cpu, Wallet } from 'lucide-react';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -10,8 +10,9 @@ export default function Navbar() {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/scholarships', label: 'Explore Grants' },
-    { href: '/verify', label: 'Verify Credential' },
-    { href: '/student', label: 'Student Portal' },
+    { href: '/student', label: 'Student ZK Portal' },
+    { href: '/verifier', label: 'Verifier Dashboard' },
+    { href: '/verify', label: 'Public Validator' },
     { href: '/admin', label: 'Reviewer Shield' },
   ];
 
@@ -29,7 +30,7 @@ export default function Navbar() {
               ScholarShield
             </span>
             <span className="hidden sm:inline-block ml-2 text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300">
-              Verified v2.4
+              Midnight ZK DApp
             </span>
           </div>
         </Link>
@@ -42,9 +43,9 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-3 py-2 rounded-xl text-xs font-semibold transition-colors ${
                   isActive
-                    ? 'bg-indigo-600/20 text-indigo-300 border border-indigo-500/30 shadow-sm'
+                    ? 'bg-indigo-600/30 text-cyan-300 border border-indigo-500/40 shadow-sm'
                     : 'text-gray-300 hover:text-white hover:bg-white/5'
                 }`}
               >
@@ -55,20 +56,20 @@ export default function Navbar() {
         </div>
 
         {/* Quick CTA */}
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-2.5">
           <Link
-            href="/apply"
-            className="hidden sm:inline-flex items-center space-x-1.5 px-4 py-2 rounded-lg text-sm font-semibold bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-600 hover:to-cyan-600 text-white shadow-md hover:shadow-indigo-500/25 transition-all"
+            href="/student"
+            className="inline-flex items-center space-x-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-indigo-600 via-primary-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white shadow-md hover:shadow-cyan-500/20 transition-all"
           >
-            <GraduationCap className="w-4 h-4" />
-            <span>Apply Now</span>
+            <Lock className="w-3.5 h-3.5" />
+            <span>Generate ZK Proof</span>
           </Link>
           <Link
-            href="/verify"
-            className="inline-flex items-center space-x-1.5 px-3 py-2 rounded-lg text-sm font-medium bg-surface-elevated border border-gray-700 hover:border-cyan-500/50 text-gray-200 hover:text-cyan-300 transition-colors"
+            href="/verifier"
+            className="hidden sm:inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-medium bg-surface-elevated border border-gray-700 hover:border-cyan-500/50 text-gray-200 hover:text-cyan-300 transition-colors"
           >
-            <CheckCircle2 className="w-4 h-4 text-cyan-400" />
-            <span className="hidden sm:inline">Audit Lookup</span>
+            <Cpu className="w-3.5 h-3.5 text-cyan-400" />
+            <span>Verifier Hub</span>
           </Link>
         </div>
       </div>
