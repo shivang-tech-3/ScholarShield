@@ -188,6 +188,74 @@ export class MidnightClient {
   }
 
   /**
+   * Connect to Real Stellar Freighter Wallet (Official Browser Extension)
+   */
+  public async connectFreighterWallet(): Promise<LaceWalletState> {
+    try {
+      // Dynamic import to support SSR/client environments safely
+      const freighter = await import('@stellar/freighter-api');
+      const connRes: any = await freighter.isConnected();
+      
+      const isAvailable = connRes?.isConnected === true || connRes === true;
+      if (!isAvailable || connRes?.error) {
+        throw new Error(
+          'Stellar Freighter Wallet extension was not detected. Please make sure Freighter is installed and enabled in your browser, or select "Instant Demo Shielded Prover".'
+        );
+      }
+
+      // Request user authorization
+      const accessObj = await freighter.requestAccess();
+      if (accessObj && typeof accessObj === 'object' && 'error' in accessObj && accessObj.error) {
+        throw new Error(String(accessObj.error));
+      }
+
+      let publicKey = '';
+      if (accessObj && typeof accessObj === 'object' && 'address' in accessObj && accessObj.address) {
+        publicKey = accessObj.address;
+      } else {
+        const addrObj = await freighter.getAddress();
+        if (addrObj && typeof addrObj === 'object' && 'address' in addrObj && addrObj.address) {
+          publicKey = addrObj.address;
+        } else if (typeof addrObj === 'string') {
+          publicKey = addrObj;
+        }
+      }
+
+      if (!publicKey) {
+        throw new Error('Freighter login was cancelled or rejected.');
+      }
+
+      let network: 'preprod' | 'testnet' | 'mainnet' = 'testnet';
+      try {
+        const net = await freighter.getNetwork();
+        if (net && typeof net === 'object' && 'network' in net && net.network) {
+          network = net.network.toLowerCase().includes('public') ? 'mainnet' : 'testnet';
+        }
+      } catch {}
+
+      return {
+        isConnected: true,
+        address: publicKey,
+        networkId: network,
+        balanceTDUST: 1500.0,
+        isConnecting: false,
+        error: null,
+        walletType: 'freighter'
+      };
+    } catch (err: any) {
+      return {
+        isConnected: false,
+        address: null,
+        networkId: 'testnet',
+        balanceTDUST: 0,
+        isConnecting: false,
+        error: err.message || 'Failed to connect Stellar Freighter Wallet',
+        walletType: null
+      };
+    }
+  }
+
+  /**
    * Connect to Demo Shielded Wallet (Instant Local Prover Testing)
    */
   public async connectDemoWallet(): Promise<LaceWalletState> {

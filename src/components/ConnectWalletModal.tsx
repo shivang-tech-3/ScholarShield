@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ShieldCheck, X, AlertCircle, Loader2, Sparkles, ExternalLink, Wallet } from 'lucide-react';
+import { ShieldCheck, X, AlertCircle, Loader2, Sparkles, ExternalLink, Wallet, Globe } from 'lucide-react';
 import { MidnightClient } from '@/lib/midnight/client';
 import { LaceWalletState } from '@/lib/midnight/types';
 
@@ -17,12 +17,12 @@ export default function ConnectWalletModal({
   onWalletConnected
 }: ConnectWalletModalProps) {
   const [isConnecting, setIsConnecting] = useState(false);
-  const [selectedType, setSelectedType] = useState<'lace' | 'demo' | null>(null);
+  const [selectedType, setSelectedType] = useState<'lace' | 'freighter' | 'demo' | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   if (!isOpen) return null;
 
-  const handleConnect = async (type: 'lace' | 'demo') => {
+  const handleConnect = async (type: 'lace' | 'freighter' | 'demo') => {
     setSelectedType(type);
     setIsConnecting(true);
     setErrorMessage(null);
@@ -32,6 +32,8 @@ export default function ConnectWalletModal({
 
     if (type === 'lace') {
       state = await client.connectLaceWallet();
+    } else if (type === 'freighter') {
+      state = await client.connectFreighterWallet();
     } else {
       state = await client.connectDemoWallet();
     }
@@ -56,8 +58,8 @@ export default function ConnectWalletModal({
               <Wallet className="w-6 h-6" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-white">Connect Midnight Wallet</h3>
-              <p className="text-xs text-gray-400">Access Zero-Knowledge shielded proofs & grants</p>
+              <h3 className="text-lg font-bold text-white">Connect Wallet</h3>
+              <p className="text-xs text-gray-400">Access Zero-Knowledge shielded proofs, Stellar & Midnight</p>
             </div>
           </div>
           <button
@@ -69,7 +71,7 @@ export default function ConnectWalletModal({
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-4">
+        <div className="p-6 space-y-3.5">
           {errorMessage && (
             <div className="p-4 rounded-2xl bg-rose-950/60 border border-rose-500/40 flex items-start space-x-3 text-xs text-rose-200">
               <AlertCircle className="w-4 h-4 text-rose-400 flex-shrink-0 mt-0.5" />
@@ -112,7 +114,39 @@ export default function ConnectWalletModal({
             )}
           </button>
 
-          {/* Option 2: Instant Demo Shielded Prover */}
+          {/* Option 2: Stellar Freighter Wallet */}
+          <button
+            onClick={() => handleConnect('freighter')}
+            disabled={isConnecting}
+            className="w-full p-4 rounded-2xl glass-panel hover:glass-panel-elevated border border-indigo-500/30 hover:border-indigo-400/60 flex items-center justify-between group transition-all text-left disabled:opacity-50 bg-gradient-to-r from-indigo-950/20 to-transparent"
+          >
+            <div className="flex items-center space-x-3.5">
+              <div className="w-12 h-12 rounded-xl bg-indigo-900/60 border border-indigo-400/30 flex items-center justify-center text-xl group-hover:scale-105 transition-transform text-indigo-300 font-black">
+                🚀
+              </div>
+              <div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-sm font-bold text-white group-hover:text-indigo-300 transition-colors">
+                    Stellar Freighter Wallet
+                  </span>
+                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-500/30">
+                    Stellar / Soroban
+                  </span>
+                </div>
+                <p className="text-xs text-gray-400 mt-0.5">
+                  Official Stellar Freighter extension for cross-chain identity & grant disbursements
+                </p>
+              </div>
+            </div>
+
+            {isConnecting && selectedType === 'freighter' ? (
+              <Loader2 className="w-5 h-5 text-indigo-400 animate-spin" />
+            ) : (
+              <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-white transition" />
+            )}
+          </button>
+
+          {/* Option 3: Instant Demo Shielded Prover */}
           <button
             onClick={() => handleConnect('demo')}
             disabled={isConnecting}
@@ -147,7 +181,7 @@ export default function ConnectWalletModal({
 
         {/* Footer */}
         <div className="p-4 bg-surface/90 border-t border-white/10 flex items-center justify-between text-xs text-gray-400">
-          <span>Network: Midnight Preprod (Testnet)</span>
+          <span>Supported: Midnight Preprod & Stellar Testnet</span>
           <span className="flex items-center space-x-1 text-cyan-400">
             <ShieldCheck className="w-3.5 h-3.5" />
             <span>Zero-Knowledge Proofs</span>
@@ -157,3 +191,4 @@ export default function ConnectWalletModal({
     </div>
   );
 }
+
