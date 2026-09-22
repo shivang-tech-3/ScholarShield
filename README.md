@@ -55,15 +55,6 @@
 ### 2. 📱 Mobile Responsive UI (Navigation Drawer & Touch Cards)
 ![Mobile UI](./screenshots/mobile-ui.png)
 
-### 3. 🔐 Multi-Wallet Connector (Midnight Lace + Stellar Freighter + Instant Demo)
-![Multi-Wallet Modal](./screenshots/multi-wallet.png)
-
-### 4. ⚡ Zero-Knowledge Proof Synthesis & Privacy Breakdown
-![ZK Proof Generation](./screenshots/zk-proof.png)
-
-### 5. 🏛️ Verifier Governance Hub & Public Nullifier Registry
-![Verifier Hub](./screenshots/verifier-hub.png)
-
 ---
 
 ## 🔒 Public State vs. Private Witness Architecture
