@@ -163,6 +163,49 @@ export default function StudentDashboardPage() {
         <div className="lg:col-span-7 space-y-6">
           <div className="glass-panel-elevated rounded-3xl p-6 sm:p-8 border border-white/10">
             <form onSubmit={handleGenerateProofAndSubmit} className="space-y-6">
+              {/* Demo Preset Buttons for Hackathon Evaluator */}
+              <div className="p-3 rounded-2xl bg-surface border border-indigo-500/20 flex flex-wrap items-center justify-between gap-2 text-xs">
+                <span className="text-gray-400 font-semibold flex items-center space-x-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>Demo Presets:</span>
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setPrivateIncomeUSD(32000);
+                      setPrivateAcademicPercentage(92.5);
+                      setErrorMessage(null);
+                    }}
+                    className="px-2.5 py-1 rounded-lg bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/40 text-emerald-300 font-medium text-[11px] transition"
+                  >
+                    ✓ Eligible Student ($32k, 92.5%)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setPrivateIncomeUSD(85000);
+                      setPrivateAcademicPercentage(94.0);
+                      setErrorMessage(null);
+                    }}
+                    className="px-2.5 py-1 rounded-lg bg-rose-950/80 hover:bg-rose-900 border border-rose-500/40 text-rose-300 font-medium text-[11px] transition"
+                  >
+                    ✗ High Income ($85k)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setPrivateIncomeUSD(28000);
+                      setPrivateAcademicPercentage(68.0);
+                      setErrorMessage(null);
+                    }}
+                    className="px-2.5 py-1 rounded-lg bg-rose-950/80 hover:bg-rose-900 border border-rose-500/40 text-rose-300 font-medium text-[11px] transition"
+                  >
+                    ✗ Low Score (68.0%)
+                  </button>
+                </div>
+              </div>
+
               {/* Scholarship Selection */}
               <div>
                 <label className="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">
