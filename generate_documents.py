@@ -469,6 +469,7 @@ def create_pdf():
         body_style
     ))
     story.append(Paragraph("• <b>GitHub Repository:</b> https://github.com/shivang-tech-3/ScholarShield", bullet_style))
+    story.append(Paragraph("• <b>Live Web Application:</b> https://scholarshieldmoonlight.netlify.app/", bullet_style))
     story.append(Paragraph("• <b>Preprod Contract Address:</b> 0x71a4f89d02b84719283746501928374650192837465019283746501928374650", bullet_style))
 
     doc.build(story)

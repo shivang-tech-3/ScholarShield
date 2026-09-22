@@ -3,6 +3,7 @@
 > **Privacy-Preserving Student Scholarship Eligibility & Zero-Knowledge Verification Platform on Midnight Network**
 
 [![Midnight Compact 0.19](https://img.shields.io/badge/Midnight-Compact_0.19-purple?style=for-the-badge&logo=shield)](https://midnight.network)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-scholarshieldmoonlight.netlify.app-00C7B7?style=for-the-badge&logo=netlify)](https://scholarshieldmoonlight.netlify.app/)
 [![CI/CD Pipeline](https://img.shields.io/badge/CI%2FCD-Passing-success?style=for-the-badge&logo=githubactions)](https://github.com/shivang-tech-3/ScholarShield/actions)
 [![Next.js](https://img.shields.io/badge/Next.js-15.1.7-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)](https://react.dev/)
@@ -234,6 +235,8 @@ midnight-cli deploy \
 ---
 
 ## Demo Flow
+
+🔗 **Live Netlify Web Application**: [https://scholarshieldmoonlight.netlify.app/](https://scholarshieldmoonlight.netlify.app/)
 
 ### 1. Test Passing Case (Eligible Student)
 1. Go to **Student ZK Portal** (`/student`).

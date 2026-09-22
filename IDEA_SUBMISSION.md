@@ -21,6 +21,10 @@ Traditional student scholarship platforms suffer from a dual failure mode:
 
 ## 💡 3. The Solution & Midnight Architectural Innovation
 
+- **GitHub Repository:** https://github.com/shivang-tech-3/ScholarShield
+- **Live Netlify Web Application:** https://scholarshieldmoonlight.netlify.app/
+- **Preprod Contract Address:** 0x71a4f89d02b84719283746501928374650192837465019283746501928374650
+
 ScholarShield introduces a **Multi-Constraint Zero-Knowledge Evaluation Circuit** using Midnight's Compact language:
 
 ### A. Dual Multi-Dimensional Constraint Evaluation (Single Circuit)

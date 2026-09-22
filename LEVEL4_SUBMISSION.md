@@ -113,7 +113,8 @@ ScholarShield utilizes Midnight's Zero-Knowledge Compact smart contracts to veri
 ---
 
 ## Live Demo
-- Local Demo: [http://localhost:3000](http://localhost:3000)
+- **Live Netlify Web Application**: [https://scholarshieldmoonlight.netlify.app/](https://scholarshieldmoonlight.netlify.app/)
+- **Local Dev**: [http://localhost:3000](http://localhost:3000)
 
 ---
 
