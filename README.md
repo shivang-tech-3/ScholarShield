@@ -1,122 +1,115 @@
 # 🛡️ ScholarShield
 
-> **Cryptographic Student Scholarship Management, Anti-Fraud AI Sentinel & Tamper-Proof Credential Verification Platform**
+> **Midnight Network Zero-Knowledge Scholarship Privacy DApp & Cryptographic Credential Protocol**
 
+[![Midnight Compact 0.19](https://img.shields.io/badge/Midnight-Compact_0.19-purple?style=for-the-badge&logo=shield)](https://midnight.network)
 [![Next.js](https://img.shields.io/badge/Next.js-15.1.7-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.17-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7.3-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Security: SHA-256](https://img.shields.io/badge/Security-SHA--256_Ed25519-emerald?style=for-the-badge&logo=shield)](https://github.com/shivang-tech-3/ScholarShield)
+[![Vitest](https://img.shields.io/badge/Vitest-5.0.1-brightgreen?style=for-the-badge&logo=vitest)](https://vitest.dev/)
 
 ---
 
 ## 🌟 Executive Overview
 
-**ScholarShield** is an end-to-end decentralized and AI-empowered scholarship management and credential authenticity system. It solves two critical bottlenecks in higher education philanthropy:
-1. **Academic Credential & Income Fraud**: Detecting altered PDF transcripts, manipulated GPA records, fabricated identity certificates, and duplicate applications across multiple universities.
-2. **Delayed & Opaque Fund Disbursement**: Providing instant cryptographic verification, transparent review workflows, and simulated smart escrow fund dispatch.
+**ScholarShield** is a functional **Midnight Privacy DApp** designed to revolutionize higher education philanthropy. It allows students to prove their eligibility (family income ceiling and academic score prerequisites) to universities and grant sponsors using **Zero-Knowledge Proofs (ZK-SNARKs)** without revealing their sensitive private records or bank balances to the public blockchain.
 
 ---
 
-## ✨ Core Pillars & Capabilities
+## 🔒 Core Privacy Flow
 
-### 🎓 1. Student Opportunity & Application Hub
-- **Dynamic Grant Marketplace**: Filter verified scholarships across STEM, Merit, Need-Based, Diversity, and Global categories.
-- **Smart Eligibility Matcher**: Real-time evaluation against prerequisite GPA, major disciplines, and family income ceilings.
-- **Client-Side SHA-256 Hashing**: Generates tamper-proof cryptographic signatures directly from the user's browser for uploaded transcripts and financial records.
-- **Live Milestone Tracker**: Real-time progress updates from submission to AI sentinel validation and grant disbursement.
-
-### 🤖 2. ScholarShield AI Sentinel (Fraud Prevention Engine)
-- **Document Metadata & Typography Auditing**: Detects PDF font modifications, anomalous GPA text blocks, and timestamp irregularities.
-- **Cross-Institutional Duplicate Check**: Intercepts duplicate applicant attempts across partner university nodes.
-- **Integrity Scoring Index**: Provides transparent 0–100 risk scoring with highlighted anomaly flags for scholarship committees.
-
-### 🏛️ 3. Reviewer & Committee Command Center
-- **Applicant Queue with Risk Categorization**: Filter by High, Medium, or Low risk tiers for rapid triaging.
-- **One-Click Governance & Escrow**: Approve, reject, or release escrow payouts with instant transaction proof generation.
-- **Audit Trails**: Immutable verification logs linking candidates, sponsors, and registrar nodes.
-
-### 🔍 4. Public Cryptographic Validator
-- **Instant Certificate Lookup**: Publicly verify any student badge (e.g. `SS-STN-9821`, `SS-MIT-4402`) or upload files to compare SHA-256 hashes against the registry.
+```
+Student enters private eligibility info (Income, Academic Score, Secret)
+        ↓
+Shielded Witness & Private Salt (Client-side execution only)
+        ↓
+Midnight Compact Contract (`scholarshield.compact`)
+        ↓
+Zero-Knowledge Circuit Verification (PLONK ZK-SNARKs):
+  • Income <= Max Program Income Limit ($50,000)
+  • Academic Percentage >= Min Required Score (85.00%)
+  • University KYC Whitelist Merkle Proof Verified
+  • Deterministic Nullifier Derived (1 claim per student per grant)
+        ↓
+Public On-Chain Verification:
+  ✓ Result: ELIGIBLE or NOT ELIGIBLE
+  ✓ Exact income, score, and student secret remain 100% hidden
+```
 
 ---
 
-## 🏗️ Architecture & Technology Stack
+## 📁 Repository Structure
 
 ```
 ScholarShield/
 ├── src/
-│   ├── app/
-│   │   ├── admin/page.tsx         # Reviewer Shield & AI Fraud Queue
-│   │   ├── apply/page.tsx         # Student Submission & Document Hashing
-│   │   ├── scholarships/page.tsx  # Grant Discovery & Matcher Sliders
-│   │   ├── student/page.tsx       # Student Dashboard & Milestone Tracker
-│   │   ├── verify/page.tsx        # Public SHA-256 Validator & Certificate Search
-│   │   ├── globals.css            # Custom glassmorphism & dark palette
-│   │   ├── layout.tsx             # Global layout & metadata
-│   │   └── page.tsx               # High-impact landing page & live stats
-│   ├── components/
-│   │   ├── Navbar.tsx             # Responsive glass header
-│   │   ├── Footer.tsx             # Security standards & links
-│   │   ├── FraudScoreBadge.tsx    # Risk scoring indicator
-│   │   ├── ScholarshipCard.tsx    # Interactive grant card
-│   │   └── VerificationModal.tsx  # Cryptographic seal dialog
+│   ├── contract/
+│   │   └── scholarshield.compact     # Midnight Compact 0.19 Smart Contract
 │   ├── lib/
-│   │   ├── crypto.ts              # Web Crypto SHA-256 & ID generators
-│   │   ├── data.ts                # Seed grants and verified records
-│   │   └── store.ts               # Local persistence & reactive store
-│   └── types/
-│       └── index.ts               # TypeScript data definitions
+│   │   └── midnight/
+│   │       ├── client.ts              # Lace Wallet DApp Connector & Prover Service
+│   │       ├── crypto-browser.ts      # Browser-compatible SHA-256 & Merkle Tree
+│   │       ├── crypto.ts              # Node.js Cryptographic Engine
+│   │       ├── types.ts               # Midnight Types & State Definitions
+│   │       └── zk-scholarship-engine.ts # Compact ZK Circuit Emulation Engine
+│   ├── components/
+│   │   ├── ConnectWalletModal.tsx     # Lace Wallet & Demo Prover Dialog
+│   │   ├── Navbar.tsx                 # Navigation with ZK Portal & Verifier Links
+│   │   └── Footer.tsx                 # Security Standards
+│   └── app/
+│       ├── student/page.tsx           # Student Shielded Portal & ZK Proof Generator
+│       ├── verifier/page.tsx          # Verifier Governance & Proof Auditor
+│       ├── scholarships/page.tsx      # Grant Directory & Prerequisite Filters
+│       ├── verify/page.tsx            # Public SHA-256 Validator
+│       └── page.tsx                   # Platform Overview & Stats
+└── tests/
+    └── scholarshield-compact.test.ts  # Vitest Test Suite for Compact Circuits
 ```
 
 ---
 
 ## 🚀 Quick Start Guide
 
-### Prerequisites
-- Node.js `v18.0.0` or later
-- npm `v9.0.0` or later
+### 1. Install Dependencies
+```bash
+npm install
+```
 
-### Installation & Local Setup
+### 2. Run Compact Contract Tests
+```bash
+npm test
+```
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/shivang-tech-3/ScholarShield.git
-   cd ScholarShield
-   ```
+### 3. Run Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Run the local development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in your browser**:
-   Navigate to [http://localhost:3000](http://localhost:3000) to access the platform.
-
-5. **Build for production**:
-   ```bash
-   npm run build
-   npm run start
-   ```
+### 4. Build for Production
+```bash
+npm run build
+npm run start
+```
 
 ---
 
-## 🔒 Security Threat Model
+## 🧪 Unit Test Coverage Matrix
 
-| Threat | ScholarShield Mitigation |
-| :--- | :--- |
-| **Altered Transcript GPA** | Client computes SHA-256 hash verified against registrar signature. |
-| **Fake Identity / Duplicate Claims** | Cross-registry identity match and multi-sig issuance prevent duplicate submissions. |
-| **Unauthorized Grant Divergence** | Multi-party escrow requires officer sign-off before dispatching transactions. |
+| Test Scenario | Circuit Constraint | Result |
+| :--- | :--- | :--- |
+| **Eligible Student** | Income ≤ $50,000 & Score ≥ 85.00% | ✅ Passed (Status: `Eligible`) |
+| **Income Above Ceiling** | Income $75,000 > $50,000 | ✅ Passed (Rejected with ZK constraint error) |
+| **Score Below Minimum** | Score 78.00% < 85.00% | ✅ Passed (Rejected with ZK constraint error) |
+| **Both Criteria Failing** | Income $90,000 & Score 65.00% | ✅ Passed (Rejected) |
+| **Non-Whitelisted Student** | Unregistered secret | ✅ Passed (Merkle proof failure) |
+| **Anti-Double Claiming** | Duplicate nullifier broadcast | ✅ Passed (Nullifier collision prevented) |
+| **Selective Compliance Viewing Key** | Midnight Rational Privacy | ✅ Passed (Auditor record stored) |
 
 ---
 
-## 📄 License & Attribution
+## 📄 License
 
-Designed and maintained by the **ScholarShield Team**. Open source under the MIT License.
+MIT License. Developed for the **Midnight Network Ecosystem**.
 Repository: [https://github.com/shivang-tech-3/ScholarShield](https://github.com/shivang-tech-3/ScholarShield)
