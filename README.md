@@ -30,7 +30,7 @@
 | Rise In Required Checklist Item | Direct Verified Link / Resource | Status |
 | :--- | :--- | :---: |
 | **1. Public GitHub Repository** | [github.com/shivang-tech-3/ScholarShield](https://github.com/shivang-tech-3/ScholarShield) | ✅ Active & Public |
-| **2. Minimum Meaningful Commits** | [50+ Commits on `main`](https://github.com/shivang-tech-3/ScholarShield/commits/main) | ✅ 50+ Commits |
+| **2. Minimum Meaningful Commits** | [20+ Commits on `main`](https://github.com/shivang-tech-3/ScholarShield/commits/main) | ✅ 20+ Commits |
 | **3. Live Production DApp** | **[scholarshieldmoonlight.netlify.app](https://scholarshieldmoonlight.netlify.app/)** | ✅ Live & Responsive |
 | **4. Demo Video Walkthrough** | **[Watch 1080p Demo on YouTube](https://youtu.be/GK1J3Dq58_8)** | ✅ Live on YouTube |
 | **5. Compact Smart Contract (v0.19)** | [`contract/scholarshield.compact`](./contract/scholarshield.compact) | ✅ 3 Circuits Verified |
