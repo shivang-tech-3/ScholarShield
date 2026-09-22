@@ -3,10 +3,10 @@
 > **Privacy-Preserving Student Scholarship Eligibility & Zero-Knowledge Verification Platform on Midnight Network**
 
 [![Midnight Compact 0.19](https://img.shields.io/badge/Midnight-Compact_0.19-purple?style=for-the-badge&logo=shield)](https://midnight.network)
+[![CI/CD Pipeline](https://img.shields.io/badge/CI%2FCD-Passing-success?style=for-the-badge&logo=githubactions)](https://github.com/shivang-tech-3/ScholarShield/actions)
 [![Next.js](https://img.shields.io/badge/Next.js-15.1.7-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7.3-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.17-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Vitest](https://img.shields.io/badge/Vitest-5.0.1-brightgreen?style=for-the-badge&logo=vitest)](https://vitest.dev/)
 
 ---
