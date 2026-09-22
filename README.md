@@ -32,7 +32,7 @@
 | **1. Public GitHub Repository** | [github.com/shivang-tech-3/ScholarShield](https://github.com/shivang-tech-3/ScholarShield) | ✅ Active & Public |
 | **2. Minimum Meaningful Commits** | [20+ Commits on `main`](https://github.com/shivang-tech-3/ScholarShield/commits/main) | ✅ 20+ Commits |
 | **3. Live Production DApp** | **[scholarshieldmoonlight.netlify.app](https://scholarshieldmoonlight.netlify.app/)** | ✅ Live & Responsive |
-| **4. Demo Video Walkthrough** | **[Watch 1080p Demo on YouTube](https://youtu.be/GK1J3Dq58_8)** | ✅ Live on YouTube |
+| **4. Demo Video Walkthrough** | **[Watch 1080p Demo on YouTube](https://youtu.be/eMNURS9smMI)** | ✅ Live on YouTube |
 | **5. Compact Smart Contract (v0.19)** | [`contract/scholarshield.compact`](./contract/scholarshield.compact) | ✅ 3 Circuits Verified |
 | **6. Preprod Deployed Contract Address** | `0x8f19e4a3b7c2d1e0f98457201948571029384756192837465019283746501928` | ✅ Deployed on Preprod |
 | **7. Automated Test Suite (12 Tests)** | [`tests/scholarshield-compact.test.ts`](./tests/scholarshield-compact.test.ts) | ✅ 12/12 Tests Passing |
