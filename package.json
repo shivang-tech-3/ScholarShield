@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "compile:compact": "tsc -p contract/tsconfig.json",
     "test": "vitest run",
     "test:watch": "vitest",
     "deploy:preprod": "node scripts/deploy-preprod.cjs",

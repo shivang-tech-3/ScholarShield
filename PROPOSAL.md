@@ -1,8 +1,38 @@
 # 🛡️ ScholarShield Protocol — Product Proposal & Technical Specification
 
-> **Track:** Identity, Compliance & Verifiable Credentials  
+> **Track:** Finance & Governance / Identity, Compliance & Verifiable Credentials  
+> **Official Category (from provided list):** **Confidential Credentials** & **Age / Eligibility Gate** & **Private Allowlist Access**  
 > **Target Network:** Midnight Network (Preprod Testnet)  
-> **Category:** Confidential Credentials & Zero-Knowledge Eligibility Gate (Midnight Request for Startups)
+> **Deployed Preprod Contract Address:** `0xd73ba68393b75a34765a34f4894eef72173d75dfb3768ac5a50cd2e3c0142800`  
+> **Live DApp:** [https://scholarshieldmoonlight.netlify.app/](https://scholarshieldmoonlight.netlify.app/)  
+> **Repository:** [https://github.com/shivang-tech-3/ScholarShield](https://github.com/shivang-tech-3/ScholarShield)  
+
+---
+
+## 📋 Rise In Core 4-Question Product Proposal
+
+### Question 1: What problem are you solving?
+Higher education scholarships and merit-based grants distribute over $100 Billion globally each year. However, the legacy evaluation process forces vulnerable students to submit unredacted family tax filings, bank balance sheets, academic grade transcripts, and government ID numbers to review committees and university boards. This creates:
+1. **Severe Privacy Breaches & Social Stigmatization**: Students are exposed to bias and identity theft by disclosing intimate financial hardships.
+2. **Double-Claiming & Document Forgery**: Institutions lack cryptographic guarantees against duplicate claims across universities or photoshopped transcript documents.
+3. **Public Ledger Privacy Violations**: Standard L1 blockchains (Ethereum, Solana) broadcast student scores and financial allocations publicly on block explorers.
+
+### Question 2: What is your solution and core value proposition?
+**ScholarShield** provides a confidential credential and zero-knowledge eligibility verification protocol. Students generate a client-side zk-SNARK proof that evaluates multidimensional eligibility constraints in a single Compact circuit without revealing private numbers. Universities and grant sponsors obtain mathematical certainty of eligibility without custodying sensitive student PII.
+
+### Question 3: How does Midnight's privacy model and zero-knowledge technology specifically enable this solution?
+ScholarShield leverages Midnight's dual-state architecture and Compact v0.19 language:
+- **Private Witness Isolation**: Household income (`privateIncomeUSD`), academic GPA percentage (`privateAcademicPercentageBps`), secret keys, and salt are retained exclusively inside the student's shielded prover memory (`witness`).
+- **ZK Circuit Constraints**: The `proveAndClaimScholarship` circuit verifies that income $\le$ maximum threshold, academic score $\ge$ minimum prerequisite, and identity commitment $\in$ accredited Merkle root.
+- **On-Chain Public State Transition**: Observers only see public status `Eligible` and a cryptographic nullifier that prevents double claiming.
+- **Midnight Rational Privacy (Selective Disclosure)**: Students can issue encrypted viewing keys (`grantAuditorAccess`) to certified compliance auditors without publishing raw data on-chain.
+
+### Question 4: Who are the target users, and what is your go-to-market roadmap?
+- **Target Users**: Underprivileged students applying for need-based grants, university financial aid offices, philanthropic grant foundations (e.g. STEM, DEI initiatives), and compliance examiners.
+- **Go-to-Market Milestones**:
+  - *Phase 1 (Levels 1-2)*: Compact smart contract, Lace wallet integration, and observable privacy engine on Preprod.
+  - *Phase 2 (Levels 3-4)*: Multi-program pools, automated CI/CD pipeline, and verifier governance portal.
+  - *Phase 3 (Levels 5-6)*: Multi-wallet Stellar cross-chain payouts, institutional DID integrations, and mainnet deployment.
 
 ---
 
