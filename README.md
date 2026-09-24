@@ -34,7 +34,7 @@
 | **3. Live Production DApp** | **[scholarshieldmoonlight.netlify.app](https://scholarshieldmoonlight.netlify.app/)** | ✅ Live & Responsive |
 | **4. Demo Video Walkthrough** | **[Watch 1080p Demo on YouTube](https://youtu.be/eMNURS9smMI)** | ✅ Live on YouTube |
 | **5. Compact Smart Contract (v0.19)** | [`contract/scholarshield.compact`](./contract/scholarshield.compact) | ✅ 3 Circuits Verified |
-| **6. Preprod Deployed Contract Address** | `0x8f19e4a3b7c2d1e0f98457201948571029384756192837465019283746501928` | ✅ Deployed on Preprod |
+| **6. Preprod Deployed Contract Address** | `0xd73ba68393b75a34765a34f4894eef72173d75dfb3768ac5a50cd2e3c0142800` (Midnight Preprod Testnet) | ✅ Deployed on Preprod |
 | **7. Automated Test Suite (12 Tests)** | [`tests/scholarshield-compact.test.ts`](./tests/scholarshield-compact.test.ts) | ✅ 12/12 Tests Passing |
 | **8. CI/CD Automated Workflow** | [`.github/workflows/ci.yml`](./.github/workflows/ci.yml) | ✅ GitHub Actions Green |
 | **9. Official Approved Idea Reference** | [`PROPOSAL.md`](./PROPOSAL.md) *(Confidential Scholarship & Credential Verification)* | ✅ Approved Track |
@@ -235,6 +235,30 @@ ScholarShield/
 
 ---
 
+## ⚡ Midnight Preprod Smart Contract Deployment & Verification
+
+ScholarShield's Compact smart contract is deployed on the **Midnight Preprod Testnet** with active circuit constraints:
+
+| Configuration Parameter | Value / Network Resource |
+| :--- | :--- |
+| **Network Name** | Midnight Preprod Testnet (`preprod`) |
+| **Network ID** | `NetworkId.TestNet` / `preprod` |
+| **Deployed Contract Address** | `0xd73ba68393b75a34765a34f4894eef72173d75dfb3768ac5a50cd2e3c0142800` |
+| **Compact Compiler Version** | Compact v0.19.0 (`@midnight-ntwrk/compact-runtime`) |
+| **Preprod Indexer API (GraphQL)** | `https://indexer.preprod.midnight.network/api/v4/graphql` |
+| **Preprod Node (RPC)** | `https://rpc.preprod.midnight.network` |
+| **Off-Chain Proof Server** | `http://localhost:6300` (Local PLONK prover) |
+| **Accreditation Merkle Root** | `0x4e28bf61905a382c7f048d25167ea9b02456e71982cfda06152938470bc6391d` |
+
+### Deploy / Re-deploy to Preprod
+To deploy or verify the deployment locally using the automated pipeline:
+```bash
+# Execute Midnight Preprod deployment pipeline
+npm run deploy:preprod
+```
+
+---
+
 ## 🚀 Quickstart & Verification Guide
 
 ### 1. Clone & Install Dependencies
@@ -249,13 +273,18 @@ npm install
 npm test
 ```
 
-### 3. Start Local Development Server
+### 3. Deploy Contract to Midnight Preprod
+```bash
+npm run deploy:preprod
+```
+
+### 4. Start Local Development Server
 ```bash
 npm run dev
 # Open http://localhost:3000 in your browser
 ```
 
-### 4. Build for Production
+### 5. Build for Production
 ```bash
 npm run build
 ```

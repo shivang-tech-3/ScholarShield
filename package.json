@@ -10,6 +10,7 @@
     "lint": "next lint",
     "test": "vitest run",
     "test:watch": "vitest",
+    "deploy:preprod": "node scripts/deploy-preprod.cjs",
     "audit": "node scripts/verify-submission.cjs"
   },
   "dependencies": {

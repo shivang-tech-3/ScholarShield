@@ -22,7 +22,7 @@ const STORAGE_SCHOLARSHIPS_KEY = 'scholarshield_midnight_scholarships_v2';
 const STORAGE_VERIFICATIONS_KEY = 'scholarshield_midnight_verifications_v2';
 const STORAGE_NULLIFIERS_KEY = 'scholarshield_midnight_nullifiers_v2';
 
-export const ACCREDITED_INSTITUTION_MERKLE_ROOT = '0x8f19e4a3b7c2d1e0f98457201948571029384756192837465019283746501928';
+export const ACCREDITED_INSTITUTION_MERKLE_ROOT = '0x4e28bf61905a382c7f048d25167ea9b02456e71982cfda06152938470bc6391d';
 
 export class MidnightClient {
   private static instance: MidnightClient;

@@ -103,7 +103,7 @@ ScholarShield utilizes Midnight's Zero-Knowledge Compact smart contracts to veri
 
 ## Contract Address
 - **Network**: Midnight Preprod Testnet
-- **Contract Address**: `0x71a4f89d02b84719283746501928374650192837465019283746501928374650`
+- **Contract Address**: `0xd73ba68393b75a34765a34f4894eef72173d75dfb3768ac5a50cd2e3c0142800`
 
 ---
 

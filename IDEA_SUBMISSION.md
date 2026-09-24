@@ -47,7 +47,7 @@ Multi-Wallet & Production Architecture:
 ### Level 1 — New Moon Requirements:
 - [x] Midnight toolchain configured & Compact contract (`scholarshield.compact`) compiled with 3 circuits.
 - [x] Automated test suite passing (12 tests).
-- [x] Contract deployed to Preprod with verifiable address: `0x8f19e4a3b7c2d1e0f98457201948571029384756192837465019283746501928`.
+- [x] Contract deployed to Midnight Preprod Testnet with verifiable address: `0xd73ba68393b75a34765a34f4894eef72173d75dfb3768ac5a50cd2e3c0142800`.
 - [x] Initial product idea drafted in README.md with local setup instructions.
 - [x] README explaining public state vs private witness architecture.
 - [x] 50+ meaningful commits on `main`.
