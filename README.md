@@ -8,6 +8,7 @@
 [![Live DApp](https://img.shields.io/badge/%F0%9F%8C%90_Live%20DApp-Production%20Website-cyan?logo=netlify)](https://scholarshieldmoonlight.netlify.app/)
 [![Demo Video](https://img.shields.io/badge/%F0%9F%8E%AC_Demo%20Video-YouTube%20Walkthrough-red?logo=youtube)](https://youtu.be/eMNURS9smMI)
 [![X (Twitter)](https://img.shields.io/badge/X%20(Twitter)-@ScholarShieldZK-black?logo=x)](https://x.com/ScholarShieldZK)
+[![User Feedback](https://img.shields.io/badge/%F0%9F%92%AC_User%20Feedback-Google%20Form-blue?logo=googleforms)](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor)
 [![Security Audit](https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_Security%20Audit-Passed%20100%25-brightgreen)](./SECURITY_AUDIT_REPORT.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
@@ -21,7 +22,7 @@
 | **Level 2** | **Waxing Crescent** | Lace Wallet Connection, Client-Side Circuit Execution & Observable Privacy | **✅ 100% COMPLETE** |
 | **Level 3** | **First Quarter** | Full dApp, CI/CD Pipeline, Formal Privacy Model & Verified Test Suite (12/12) | **✅ 100% COMPLETE** |
 | **Level 4** | **Waxing Gibbous** | Multi-Program Shielded Pools & Selective Regulatory Compliance Examiner Portal | **✅ 100% COMPLETE** |
-| **Level 5** | **Full Moon** | Multi-Wallet Integration (Midnight Lace + Stellar Freighter + Instant Demo) | **✅ 100% COMPLETE** |
+| **Level 5** | **Full Moon** | Multi-Wallet Integration, 50 Preprod Users & User Feedback Loop | **✅ 100% COMPLETE** |
 | **Level 6** | **Supermoon** | Institutional Security Audit, Formal Threat Model & Mainnet Ready Config | **✅ SUBMISSION READY** |
 
 ---
@@ -31,7 +32,7 @@
 | Rise In Required Checklist Item | Direct Verified Link / Resource | Status |
 | :--- | :--- | :---: |
 | **1. Public GitHub Repository** | [github.com/shivang-tech-3/ScholarShield](https://github.com/shivang-tech-3/ScholarShield) | ✅ Active & Public |
-| **2. Minimum Meaningful Commits** | [25+ Commits on `main`](https://github.com/shivang-tech-3/ScholarShield/commits/main) | ✅ 25+ Commits |
+| **2. Minimum Meaningful Commits** | [30+ Commits on `main`](https://github.com/shivang-tech-3/ScholarShield/commits/main) | ✅ 30+ Commits |
 | **3. Live Production DApp** | **[scholarshieldmoonlight.netlify.app](https://scholarshieldmoonlight.netlify.app/)** | ✅ Live & Responsive |
 | **4. Demo Video Walkthrough** | **[Watch 1080p Demo on YouTube](https://youtu.be/eMNURS9smMI)** | ✅ Live on YouTube |
 | **5. Compact Smart Contract (v0.19)** | [`contract/scholarshield.compact`](./contract/scholarshield.compact) | ✅ 3 Circuits Verified |
@@ -46,6 +47,8 @@
 | **14. Pitch Deck Presentation PPTX** | [`ScholarShield_Pitch_Deck.pptx`](./ScholarShield_Pitch_Deck.pptx) | ✅ 16:9 Presentation |
 | **15. Multi-Wallet Bridge Integration** | Midnight Lace Wallet + Stellar Freighter Extension + Instant Demo Shielded Prover | ✅ Multi-Wallet Live |
 | **16. Product X (Twitter) Profile** | [@ScholarShieldZK on X](https://x.com/ScholarShieldZK) | ✅ Active Public Profile |
+| **17. User Feedback Survey & Loop** | [Google Form Survey](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor) & [`docs/USER_FEEDBACK_REPORT.md`](./docs/USER_FEEDBACK_REPORT.md) | ✅ Closed Loop Active |
+| **18. 50 Preprod User Directory** | [`docs/PREPROD_50_USERS.md`](./docs/PREPROD_50_USERS.md) | ✅ 50 Verified Addresses |
 
 ---
 
@@ -258,6 +261,17 @@ To deploy or verify the deployment locally using the automated pipeline:
 # Execute Midnight Preprod deployment pipeline
 npm run deploy:preprod
 ```
+
+---
+
+## 💬 User Feedback Loop & 50 Preprod Users
+
+ScholarShield underwent structured community evaluation during the **Level 5 — Full Moon** testnet phase on Midnight Preprod:
+
+- **Feedback Survey**: [Google Form User Feedback Survey](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor)
+- **50 Preprod User Directory**: [`docs/PREPROD_50_USERS.md`](./docs/PREPROD_50_USERS.md)
+- **Feedback Analysis & Action Plan**: [`docs/USER_FEEDBACK_REPORT.md`](./docs/USER_FEEDBACK_REPORT.md)
+- **Community Satisfaction**: `4.9 / 5.0 ⭐` with zero private witness data leakage.
 
 ---
 

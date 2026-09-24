@@ -51,15 +51,25 @@ export default function Footer() {
             <p className="text-sm text-gray-400 mb-3">
               Open platform for verified academic credential validation and grant integrity.
             </p>
-            <a
-              href="https://github.com/shivang-tech-3/ScholarShield"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-lg bg-surface-elevated border border-gray-700 hover:border-gray-500 text-sm text-gray-200 hover:text-white transition"
-            >
-              <Github className="w-4 h-4" />
-              <span>shivang-tech-3 / ScholarShield</span>
-            </a>
+            <div className="flex flex-col space-y-2">
+              <a
+                href="https://github.com/shivang-tech-3/ScholarShield"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-lg bg-surface-elevated border border-gray-700 hover:border-gray-500 text-sm text-gray-200 hover:text-white transition"
+              >
+                <Github className="w-4 h-4" />
+                <span>shivang-tech-3 / ScholarShield</span>
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-lg bg-indigo-950/60 border border-indigo-500/40 hover:border-indigo-400 text-sm text-indigo-300 hover:text-white transition"
+              >
+                <span>💬 Give User Feedback</span>
+              </a>
+            </div>
           </div>
         </div>
 
