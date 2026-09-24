@@ -53,7 +53,7 @@ export async function deployScholarShieldContract() {
   };
 }
 
-if (require.main === module) {
+if (typeof require !== 'undefined' && typeof module !== 'undefined' && require.main === module) {
   deployScholarShieldContract().catch((err) => {
     console.error('Deployment failed:', err);
     process.exit(1);
