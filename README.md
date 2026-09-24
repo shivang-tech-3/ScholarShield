@@ -9,6 +9,7 @@
 [![Demo Video](https://img.shields.io/badge/%F0%9F%8E%AC_Demo%20Video-YouTube%20Walkthrough-red?logo=youtube)](https://youtu.be/eMNURS9smMI)
 [![X (Twitter)](https://img.shields.io/badge/X%20(Twitter)-@ScholarShieldZK-black?logo=x)](https://x.com/ScholarShieldZK)
 [![User Feedback](https://img.shields.io/badge/%F0%9F%92%AC_User%20Feedback-Google%20Form-blue?logo=googleforms)](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor)
+[![Feedback Responses](https://img.shields.io/badge/%F0%9F%93%8A_Feedback%20Responses-Google%20Sheets-green?logo=googlesheets)](https://docs.google.com/spreadsheets/d/1Xy3z6S7DnNI9N4MYdF-GMsJNCRXkzGr47KAxVgSdKqo/edit?usp=sharing)
 [![Security Audit](https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_Security%20Audit-Passed%20100%25-brightgreen)](./SECURITY_AUDIT_REPORT.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
@@ -47,7 +48,7 @@
 | **14. Pitch Deck Presentation PPTX** | [`ScholarShield_Pitch_Deck.pptx`](./ScholarShield_Pitch_Deck.pptx) | ✅ 16:9 Presentation |
 | **15. Multi-Wallet Bridge Integration** | Midnight Lace Wallet + Stellar Freighter Extension + Instant Demo Shielded Prover | ✅ Multi-Wallet Live |
 | **16. Product X (Twitter) Profile** | [@ScholarShieldZK on X](https://x.com/ScholarShieldZK) | ✅ Active Public Profile |
-| **17. User Feedback Survey & Loop** | [Google Form Survey](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor) & [`docs/USER_FEEDBACK_REPORT.md`](./docs/USER_FEEDBACK_REPORT.md) | ✅ Closed Loop Active |
+| **17. User Feedback Survey & Loop** | [Google Form Survey](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor) & [Live Responses Sheet](https://docs.google.com/spreadsheets/d/1Xy3z6S7DnNI9N4MYdF-GMsJNCRXkzGr47KAxVgSdKqo/edit?usp=sharing) & [`docs/USER_FEEDBACK_REPORT.md`](./docs/USER_FEEDBACK_REPORT.md) | ✅ Closed Loop Active |
 | **18. 50 Preprod User Directory** | [`docs/PREPROD_50_USERS.md`](./docs/PREPROD_50_USERS.md) | ✅ 50 Verified Addresses |
 
 ---
@@ -269,6 +270,7 @@ npm run deploy:preprod
 ScholarShield underwent structured community evaluation during the **Level 5 — Full Moon** testnet phase on Midnight Preprod:
 
 - **Feedback Survey**: [Google Form User Feedback Survey](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor)
+- **Live Responses Sheet**: [Google Sheets Survey Responses](https://docs.google.com/spreadsheets/d/1Xy3z6S7DnNI9N4MYdF-GMsJNCRXkzGr47KAxVgSdKqo/edit?usp=sharing)
 - **50 Preprod User Directory**: [`docs/PREPROD_50_USERS.md`](./docs/PREPROD_50_USERS.md)
 - **Feedback Analysis & Action Plan**: [`docs/USER_FEEDBACK_REPORT.md`](./docs/USER_FEEDBACK_REPORT.md)
 - **Community Satisfaction**: `4.9 / 5.0 ⭐` with zero private witness data leakage.

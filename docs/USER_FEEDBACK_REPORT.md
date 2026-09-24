@@ -5,7 +5,8 @@ This report documents the structured user feedback collected during the **Level 
 ---
 
 ## 🔗 Live User Feedback Survey
-- **Feedback Form URL**: [https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor)
+- **Feedback Form URL**: [Google Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor)
+- **Live Survey Responses Sheet**: [Google Sheets Responses Spreadsheet](https://docs.google.com/spreadsheets/d/1Xy3z6S7DnNI9N4MYdF-GMsJNCRXkzGr47KAxVgSdKqo/edit?usp=sharing)
 - **Target Audience**: Students, university financial aid officers, philanthropic sponsors, and compliance auditors.
 - **Evaluation Period**: September 2026
 
