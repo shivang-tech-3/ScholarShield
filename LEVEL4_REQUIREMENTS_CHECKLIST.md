@@ -51,6 +51,7 @@ This checklist audits the current implementation of **ScholarShield** against th
 
 - [PASS] **Professional README.md**: Complete with problem, solution, Midnight usage, privacy model, architecture diagrams, local setup, deployment instructions, and limitations.
 - [PASS] **Level 4 Submission Summary (`LEVEL4_SUBMISSION.md`)**: Full project breakdown formatted for the Midnight Rise In track.
-- [PASS] **Clean Git Repository**: Standardized `.gitignore`, no secrets committed, no `node_modules` or build artifacts in version control.
-- [TODO] **Video Demonstration Recording**: Record a 2–3 minute video walking through the Student Portal and Verifier Portal for final Rise In submission.
-- [TODO] **Final Preprod Testnet On-Chain Dispatch**: Run `midnight-cli deploy` if live testnet transaction settlement is required by the submission form.
+- [PASS] **Product X (Twitter) Public Profile**: Active public profile on X ([@ScholarShieldZK](https://x.com/ScholarShieldZK)).
+- [PASS] **Demo Video Walkthrough**: Complete YouTube video walkthrough showcasing wallet connection and ZK circuit execution ([Watch on YouTube](https://youtu.be/eMNURS9smMI)).
+- [PASS] **Preprod Testnet On-Chain Contract**: Deployed on Midnight Preprod (`0xd73ba68393b75a34765a34f4894eef72173d75dfb3768ac5a50cd2e3c0142800`) with automated deployment pipeline (`npm run deploy:preprod`).
+- [PASS] **Minimum Meaningful Commits**: 25+ commits on `main` branch exceeding the 15-commit requirement.

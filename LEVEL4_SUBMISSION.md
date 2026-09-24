@@ -118,6 +118,12 @@ ScholarShield utilizes Midnight's Zero-Knowledge Compact smart contracts to veri
 
 ---
 
+## Demo Video & Social Links
+- **Demo Video Walkthrough**: [https://youtu.be/eMNURS9smMI](https://youtu.be/eMNURS9smMI)
+- **Product X (Twitter) Profile**: [https://x.com/ScholarShieldZK](https://x.com/ScholarShieldZK)
+
+---
+
 ## Future Scope
 - Integration with Decentralized Identity (DID) credentials for registrar digital attestations.
 - Automated multi-sig scholarship escrow payouts triggered directly upon verified claim finalization.

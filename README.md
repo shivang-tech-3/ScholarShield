@@ -6,7 +6,8 @@
 [![Compact Language](https://img.shields.io/badge/Compact%20Language-v0.19.0-indigo)](https://midnight.network)
 [![CI/CD Pipeline](https://github.com/shivang-tech-3/ScholarShield/actions/workflows/ci.yml/badge.svg)](https://github.com/shivang-tech-3/ScholarShield/actions)
 [![Live DApp](https://img.shields.io/badge/%F0%9F%8C%90_Live%20DApp-Production%20Website-cyan?logo=netlify)](https://scholarshieldmoonlight.netlify.app/)
-[![Demo Video](https://img.shields.io/badge/%F0%9F%8E%AC_Demo%20Video-YouTube%20Walkthrough-red?logo=youtube)](https://youtu.be/GK1J3Dq58_8)
+[![Demo Video](https://img.shields.io/badge/%F0%9F%8E%AC_Demo%20Video-YouTube%20Walkthrough-red?logo=youtube)](https://youtu.be/eMNURS9smMI)
+[![X (Twitter)](https://img.shields.io/badge/X%20(Twitter)-@ScholarShieldZK-black?logo=x)](https://x.com/ScholarShieldZK)
 [![Security Audit](https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_Security%20Audit-Passed%20100%25-brightgreen)](./SECURITY_AUDIT_REPORT.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
@@ -30,7 +31,7 @@
 | Rise In Required Checklist Item | Direct Verified Link / Resource | Status |
 | :--- | :--- | :---: |
 | **1. Public GitHub Repository** | [github.com/shivang-tech-3/ScholarShield](https://github.com/shivang-tech-3/ScholarShield) | ✅ Active & Public |
-| **2. Minimum Meaningful Commits** | [20+ Commits on `main`](https://github.com/shivang-tech-3/ScholarShield/commits/main) | ✅ 20+ Commits |
+| **2. Minimum Meaningful Commits** | [25+ Commits on `main`](https://github.com/shivang-tech-3/ScholarShield/commits/main) | ✅ 25+ Commits |
 | **3. Live Production DApp** | **[scholarshieldmoonlight.netlify.app](https://scholarshieldmoonlight.netlify.app/)** | ✅ Live & Responsive |
 | **4. Demo Video Walkthrough** | **[Watch 1080p Demo on YouTube](https://youtu.be/eMNURS9smMI)** | ✅ Live on YouTube |
 | **5. Compact Smart Contract (v0.19)** | [`contract/scholarshield.compact`](./contract/scholarshield.compact) | ✅ 3 Circuits Verified |
@@ -44,6 +45,7 @@
 | **13. Idea Specification PDF** | [`ScholarShield_Idea_Description.pdf`](./ScholarShield_Idea_Description.pdf) | ✅ PDF Specification |
 | **14. Pitch Deck Presentation PPTX** | [`ScholarShield_Pitch_Deck.pptx`](./ScholarShield_Pitch_Deck.pptx) | ✅ 16:9 Presentation |
 | **15. Multi-Wallet Bridge Integration** | Midnight Lace Wallet + Stellar Freighter Extension + Instant Demo Shielded Prover | ✅ Multi-Wallet Live |
+| **16. Product X (Twitter) Profile** | [@ScholarShieldZK on X](https://x.com/ScholarShieldZK) | ✅ Active Public Profile |
 
 ---
 
