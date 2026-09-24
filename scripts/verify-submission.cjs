@@ -20,11 +20,16 @@ const REQUIRED_FILES = [
   'IDEA_SUBMISSION.md',
   'LEVEL4_SUBMISSION.md',
   'LEVEL4_REQUIREMENTS_CHECKLIST.md',
+  'LEVEL5_SUBMISSION.md',
+  'LEVEL6_SUBMISSION.md',
+  'docs/PREPROD_50_USERS.md',
+  'docs/PREPROD_70_USERS.md',
+  'docs/USER_FEEDBACK_REPORT.md',
   'SCREENSHOTS_GUIDE.md',
   '.env.example'
 ];
 
-console.log('\n🔍 Auditing ScholarShield Level 1-4 Submission Package...\n');
+console.log('\n🔍 Auditing ScholarShield Level 1-6 Supermoon Submission Package...\n');
 
 let allPresent = true;
 for (const file of REQUIRED_FILES) {

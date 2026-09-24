@@ -24,7 +24,7 @@
 | **Level 3** | **First Quarter** | Full dApp, CI/CD Pipeline, Formal Privacy Model & Verified Test Suite (12/12) | **✅ 100% COMPLETE** |
 | **Level 4** | **Waxing Gibbous** | Multi-Program Shielded Pools & Selective Regulatory Compliance Examiner Portal | **✅ 100% COMPLETE** |
 | **Level 5** | **Full Moon** | Multi-Wallet Integration, 50 Preprod Users & User Feedback Loop | **✅ 100% COMPLETE** |
-| **Level 6** | **Supermoon** | Institutional Security Audit, Formal Threat Model & Mainnet Ready Config | **✅ SUBMISSION READY** |
+| **Level 6** | **Supermoon** | 70 Preprod Users, Closed Feedback Loop, Institutional Audit & Supermoon Submission | **✅ 100% COMPLETE** |
 
 ---
 
@@ -33,7 +33,7 @@
 | Rise In Required Checklist Item | Direct Verified Link / Resource | Status |
 | :--- | :--- | :---: |
 | **1. Public GitHub Repository** | [github.com/shivang-tech-3/ScholarShield](https://github.com/shivang-tech-3/ScholarShield) | ✅ Active & Public |
-| **2. Minimum Meaningful Commits** | [30+ Commits on `main`](https://github.com/shivang-tech-3/ScholarShield/commits/main) | ✅ 30+ Commits |
+| **2. Minimum Meaningful Commits** | [30+ Commits on `main`](https://github.com/shivang-tech-3/ScholarShield/commits/main) | ✅ 31+ Commits |
 | **3. Live Production DApp** | **[scholarshieldmoonlight.netlify.app](https://scholarshieldmoonlight.netlify.app/)** | ✅ Live & Responsive |
 | **4. Demo Video Walkthrough** | **[Watch 1080p Demo on YouTube](https://youtu.be/eMNURS9smMI)** | ✅ Live on YouTube |
 | **5. Compact Smart Contract (v0.19)** | [`contract/scholarshield.compact`](./contract/scholarshield.compact) | ✅ 3 Circuits Verified |
@@ -49,7 +49,8 @@
 | **15. Multi-Wallet Bridge Integration** | Midnight Lace Wallet + Stellar Freighter Extension + Instant Demo Shielded Prover | ✅ Multi-Wallet Live |
 | **16. Product X (Twitter) Profile** | [@ScholarShieldZK on X](https://x.com/ScholarShieldZK) | ✅ Active Public Profile |
 | **17. User Feedback Survey & Loop** | [Google Form Survey](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor) & [Live Responses Sheet](https://docs.google.com/spreadsheets/d/1Xy3z6S7DnNI9N4MYdF-GMsJNCRXkzGr47KAxVgSdKqo/edit?usp=sharing) & [`docs/USER_FEEDBACK_REPORT.md`](./docs/USER_FEEDBACK_REPORT.md) | ✅ Closed Loop Active |
-| **18. 50 Preprod User Directory** | [`docs/PREPROD_50_USERS.md`](./docs/PREPROD_50_USERS.md) | ✅ 50 Verified Addresses |
+| **18. 70 Preprod User Directory** | [`docs/PREPROD_70_USERS.md`](./docs/PREPROD_70_USERS.md) & [`docs/PREPROD_50_USERS.md`](./docs/PREPROD_50_USERS.md) | ✅ 70 Verified Addresses |
+| **19. Level 6 Supermoon Submission Report** | [`LEVEL6_SUBMISSION.md`](./LEVEL6_SUBMISSION.md) & [`LEVEL5_SUBMISSION.md`](./LEVEL5_SUBMISSION.md) | ✅ Complete & Verified |
 
 ---
 
@@ -265,13 +266,13 @@ npm run deploy:preprod
 
 ---
 
-## 💬 User Feedback Loop & 50 Preprod Users
+## 💬 User Feedback Loop & 70 Preprod Users
 
-ScholarShield underwent structured community evaluation during the **Level 5 — Full Moon** testnet phase on Midnight Preprod:
+ScholarShield underwent structured community evaluation during the **Level 5 & Level 6 — Supermoon** testnet phase on Midnight Preprod:
 
 - **Feedback Survey**: [Google Form User Feedback Survey](https://docs.google.com/forms/d/e/1FAIpQLSerHDaXIGBi-GWtshZHQfT8IjTk61yqO9eX0iXVmuiLZLrRPg/viewform?usp=publish-editor)
 - **Live Responses Sheet**: [Google Sheets Survey Responses](https://docs.google.com/spreadsheets/d/1Xy3z6S7DnNI9N4MYdF-GMsJNCRXkzGr47KAxVgSdKqo/edit?usp=sharing)
-- **50 Preprod User Directory**: [`docs/PREPROD_50_USERS.md`](./docs/PREPROD_50_USERS.md)
+- **70 Preprod User Directory**: [`docs/PREPROD_70_USERS.md`](./docs/PREPROD_70_USERS.md) & [`docs/PREPROD_50_USERS.md`](./docs/PREPROD_50_USERS.md)
 - **Feedback Analysis & Action Plan**: [`docs/USER_FEEDBACK_REPORT.md`](./docs/USER_FEEDBACK_REPORT.md)
 - **Community Satisfaction**: `4.9 / 5.0 ⭐` with zero private witness data leakage.
 
