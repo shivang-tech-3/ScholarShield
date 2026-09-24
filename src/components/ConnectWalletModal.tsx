@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { ShieldCheck, X, AlertCircle, Loader2, Sparkles, ExternalLink, Wallet, Globe } from 'lucide-react';
+import { setNetworkId, type NetworkId } from '@midnight-ntwrk/midnight-js-network-id';
+import type { InitialAPI, ConnectedAPI, WalletConnectedAPI } from '@midnight-ntwrk/dapp-connector-api';
 import { MidnightClient } from '@/lib/midnight/client';
 import { LaceWalletState } from '@/lib/midnight/types';
 

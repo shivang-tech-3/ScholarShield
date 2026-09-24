@@ -16,6 +16,8 @@ import {
   AlertCircle
 } from 'lucide-react';
 import ConnectWalletModal from '@/components/ConnectWalletModal';
+import { getNetworkId, type NetworkId } from '@midnight-ntwrk/midnight-js-network-id';
+import type { InitialAPI, ConnectedAPI, WalletConnectedAPI } from '@midnight-ntwrk/dapp-connector-api';
 import { MidnightClient } from '@/lib/midnight/client';
 import { VerificationRecord, VerificationStatus, LaceWalletState } from '@/lib/midnight/types';
 

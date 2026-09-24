@@ -19,6 +19,8 @@ import {
   TrendingUp, 
   Copy 
 } from 'lucide-react';
+import { getNetworkId, setNetworkId, type NetworkId } from '@midnight-ntwrk/midnight-js-network-id';
+import type { InitialAPI, ConnectedAPI, WalletConnectedAPI } from '@midnight-ntwrk/dapp-connector-api';
 import ConnectWalletModal from '@/components/ConnectWalletModal';
 import { MidnightClient, ACCREDITED_INSTITUTION_MERKLE_ROOT } from '@/lib/midnight/client';
 import { ScholarshipConfig, VerificationRecord, LaceWalletState } from '@/lib/midnight/types';

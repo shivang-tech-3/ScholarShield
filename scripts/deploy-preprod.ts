@@ -3,13 +3,13 @@
  * Deploys the compiled ScholarShield Compact v0.19 Smart Contract to Midnight Preprod Testnet.
  */
 
-import { NetworkId } from '@midnight-ntwrk/midnight-js-network-id';
+import type { NetworkId } from '@midnight-ntwrk/midnight-js-network-id';
 import * as crypto from 'crypto';
 import * as fs from 'fs';
 import * as path from 'path';
 
 export const MIDNIGHT_CONFIG = {
-  networkId: NetworkId.TestNet,
+  networkId: 'preprod' as NetworkId,
   networkName: 'preprod',
   indexerUrl: process.env.NEXT_PUBLIC_MIDNIGHT_INDEXER_URL || 'https://indexer.preprod.midnight.network/api/v4/graphql',
   nodeUrl: process.env.NEXT_PUBLIC_MIDNIGHT_NODE_URL || 'https://rpc.preprod.midnight.network',
